@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Контакты</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <h1>Мой сайт</h1>
+  <nav>
+	  <ul class="menu">
+    <li class="menu-item">
+      <a href="index.html">Главная</a>
+      <ul class="submenu">
+        <li><a href="#">Подпункт 1</a></li>
+        <li><a href="#">Подпункт 2</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="#">О нас</a>
+      <ul class="submenu">
+        <li><a href="#">История</a></li>
+        <li><a href="#">Команда</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="#">Услуги</a>
+      <ul class="submenu">
+        <li><a href="#">Консалтинг</a></li>
+        <li><a href="#">Поддержка</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="#">Контакты</a>
+      <ul class="submenu">
+        <li><a href="#">Обратная связь</a></li>
+        <li><a href="#">Карта</a></li>
+      </ul>
+    </li>
+  </ul>
+  </nav>
+</header> 
+
+<section>
+  <h2>Контактная информация</h2>
+  <p>Адрес, телефон, email и формы связи.</p>
+  
+  <form action="send-email.php" method="POST">
+  <label for="name">Ваше имя:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="phone">Ваш телефон:</label><br>
+  <input type="tel" id="phone" name="phone"><br><br>
+
+  <label for="email">Ваш email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="message">Сообщение:</label><br>
+  <textarea id="message" name="message" required></textarea><br><br>
+
+  <button type="submit">Отправить</button>
+</form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Мой сайт. Все права защищены.</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

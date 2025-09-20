@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+  display: inline-block;
+}
+nav {
+  float: right;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+.hero {
+  background: #ecf0f1;
+  text-align: center;
+  padding: 50px 20px;
+}
+.features {
+  background: #fff;
+  padding: 20px;
+}
+/* Основные стили для меню */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #34495e;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item > a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Подсветка пункта меню при наведении */
+.menu-item > a:hover {
+  background-color: #2c3e50;
+}
+
+/* скрываем подменю по умолчанию */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* ниже родителя */
+  left: 0;
+  background-color: #34495e;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  z-index: 999;
+}
+
+/* стилиция подменю */
+.submenu li a {
+  padding: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* подсветка элементов подменю */
+.submenu li a:hover {
+  background-color: #2c3e50;
+}
+
+/* разворачиваем подменю при наведении на родительский пункт */
+.menu-item:hover > .submenu {
+  display: block;
+}
